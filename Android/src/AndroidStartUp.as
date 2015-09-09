@@ -1,7 +1,10 @@
 package
 {
 
+import com.mesmotronic.ane.AndroidFullScreen;
+
 import flash.display.Sprite;
+import flash.display.StageDisplayState;
 
 import starling.core.Starling;
 
@@ -12,6 +15,12 @@ public class AndroidStartUp extends Sprite
 
     public function AndroidStartUp()
     {
+        Starling.handleLostContext = true;
+        if (!AndroidFullScreen.immersiveMode())
+        {
+            stage.displayState = StageDisplayState.FULL_SCREEN_INTERACTIVE;
+        }
+
         m_starling = new Starling(GameStartUp,stage);
         m_starling.start();
     }
