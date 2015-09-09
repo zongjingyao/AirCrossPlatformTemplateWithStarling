@@ -11,6 +11,9 @@
             <entry module-name="starling" build-configuration-name="starling">
               <dependency linkage="Merged" />
             </entry>
+            <entry module-name="Hi-ReS-Stats" build-configuration-name="Hi-ReS-Stats">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="AIRSDK" />
         </dependencies>
@@ -31,5 +34,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Shared" exported="" />
     <orderEntry type="module" module-name="starling" exported="" />
+    <orderEntry type="module" module-name="Hi-ReS-Stats" exported="" />
   </component>
 </module>
